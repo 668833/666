@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>班委中期考核 · 测评入口</title>
+<style>
+  :root{
+    --ink:#1b2b3a; --muted:#6b7f92; --line:#e3eaf2;
+    --c1:#2f6fed; --c2:#0f9d76; --c3:#b26a00; --c4:#7b4bd6;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  body{
+    margin:0;min-height:100vh;padding:32px 18px 40px;
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+    color:var(--ink);
+    background:linear-gradient(180deg,#eef4fd 0%,#f7fafc 55%,#ffffff 100%);
+    display:flex;justify-content:center;align-items:flex-start;
+  }
+  main{width:100%;max-width:520px}
+  h1{margin:0 0 8px;font-size:26px;letter-spacing:.5px;text-align:center}
+  .sub{margin:0 0 26px;text-align:center;color:var(--muted);font-size:14px}
+  .card{
+    display:block;position:relative;margin:0 0 14px;padding:18px 20px;
+    border-radius:16px;background:#fff;border:1px solid var(--line);
+    box-shadow:0 4px 18px rgba(27,43,58,.06);
+    text-decoration:none;color:var(--ink);
+    transition:transform .15s ease,box-shadow .15s ease;
+  }
+  .card:active{transform:scale(.985)}
+  .card b{display:block;font-size:17px;margin-bottom:4px}
+  .card span{display:block;font-size:13px;color:var(--muted)}
+  .card::before{
+    content:"";position:absolute;left:0;top:14px;bottom:14px;width:4px;
+    border-radius:0 4px 4px 0;
+  }
+  .c1::before{background:var(--c1)} .c2::before{background:var(--c2)}
+  .c3::before{background:var(--c3)} .c4::before{background:var(--c4)}
+  .divider{margin:22px 0 16px;text-align:center;color:var(--muted);font-size:12px;letter-spacing:2px}
+  .tip{margin:0;text-align:center;color:var(--muted);font-size:12px;line-height:1.9}
+</style>
+</head>
+<body>
+<main>
+  <h1>班委中期考核</h1>
+  <p class="sub">请选择你的身份，进入对应问卷</p>
+
+  <!-- ↓↓↓ 部署前把下面 4 个 href 换成你四份问卷的链接 ↓↓↓ -->
+  <a class="card c1" href="https://v.wjx.cn/vm/emuOZpi.aspx">
+    <b>本人自评</b><span>班委本人填写 · 实名</span>
+  </a>
+  <a class="card c2" href="https://v.wjx.cn/vm/OLD3oKd.aspx">
+    <b>班委互评</b><span>评价其他班委 · 需填姓名</span>
+  </a>
+  <a class="card c3" href="https://v.wjx.cn/vm/mBK64WH.aspx">
+    <b>辅导员评分</b><span>辅导员填写 · 可评全体班委</span>
+  </a>
+  <a class="card c4" href="https://v.wjx.cn/vm/QAeoGFf.aspx">
+    <b>班级学生评议</b><span>全班同学填写 · 匿名</span>
+  </a>
+  <!-- ↑↑↑ 到上面这行为止 ↑↑↑ -->
+
+  <div class="divider">评 分 标 准</div>
+  <p class="tip">
+    5 优秀 ｜ 4 良好 ｜ 3 合格 ｜ 2 待改进 ｜ 1 较差<br>
+    同学评议全程匿名，每人每份问卷限填一次<br>
+    截止时间：____ 月 ____ 日 18:00
+  </p>
+</main>
+</body>
+</html>
